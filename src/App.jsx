@@ -2,7 +2,7 @@ import './App.css'
 import img1 from './assets/img1.png';
 
 function App() {
-  
+
 
   return (
     <div className='app'>
@@ -11,15 +11,18 @@ function App() {
         <button className='btn'>+</button>
       </div>
       <div className="container">
-        <img src={img1} alt="logo" />
+        <div className="content">
+        <img src={img1} alt="logo" className='main-image' />
         <h2>Pocket Notes</h2>
-        <p>Send and receive messages without keeping your phone online.
-          <br />
-        Use Pocket Notes on up to 4 linked devices and 1 mobile phone</p>
+        <p>Send and receive messages without keeping your phone online.<br />
+          Use Pocket Notes on up to 4 linked devices and 1 mobile phone
+        </p>
+        </div>
         <div className="footer">
           <p>🔒end-to-end encrypted</p>
         </div>
       </div>
+      
     </div>
   )
 }

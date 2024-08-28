@@ -1,35 +1,83 @@
-* {
-  margin: 0;
-  padding: 6px;
-  box-sizing: border-box;
-}
-
 .app {
   display: flex;
-  border: 2px solid black;
   justify-content: center;
+  box-sizing: border-box;
 }
 .sidebar {
   border: 2px solid black;
-  width: 350px;
-  height: 982px;
+  width: 20%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
+
+.sidebar h3 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 41.02px;
+  
+ 
+}
 .container {
   border: 2px solid black;
-  width: 1077px;
-  height: 982px;
+  width: 80%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* position: relative; */
+  background-color: #DAE5F5;
+  /* left: 435px; */
+  
 }
+
+.content {
+  text-align: center;
+}
+.content h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 58.59px;
+}
+
+.content p {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 100px;
+}
+
 img {
   width: 626px;
   height: 313px;
+}
+.footer {
+  position: absolute;
+  bottom: 0px;
+  
+}
 
+.btn {
+  width: 93px;
+  height: 93px;
+  border-radius: 50%;
+  background-color: #16008B;
+  color: #FFFFFF;
+  font-size: 24px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-left: 60%;
+  
+  
+}
 
+.btn:hover{
+  background-color: #1a074d;
 }
