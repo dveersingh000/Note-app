@@ -1,5 +1,6 @@
 import './App.css'
 import img1 from './assets/img1.png';
+import Vector from './assets/Vector.png';
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
         </p>
         </div>
         <div className="footer">
-          <p>🔒end-to-end encrypted</p>
+        
+          <p><img src={Vector} alt="Lock Icon" className='lock-icon' />end-to-end encrypted</p>
         </div>
       </div>
       
