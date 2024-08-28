@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  border: 2px solid black;
+  justify-content: center;
+}
+.sidebar {
+  border: 2px solid black;
+  width: 350px;
+  height: 982px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  border: 2px solid black;
+  width: 1077px;
+  height: 982px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  width: 626px;
+  height: 313px;
+
+
+}
