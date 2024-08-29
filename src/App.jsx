@@ -1,15 +1,34 @@
 import './App.css'
 import img1 from './assets/img1.png';
 import Vector from './assets/Vector.png';
+import PopupForm from './components/PopupForm';
+import React, { useState } from 'react';
 
 function App() {
-
+  const [isPopupVisible, setPopupVisible] = useState(false);
+  const [groups, setGroups] = useState([]);
+  const openPopup = () => setPopupVisible(true);
+  const closePopup = () => setPopupVisible(false);
+  const addGroup = (groupName, color) => {
+    const initials = groupName.split(' ').map(word => word[0]).join(''); // Extract initials
+    setGroups([...groups, { name: groupName, color, initials }]);
+    closePopup();
+  };
 
   return (
     <div className='app'>
+      
       <div className="sidebar">
         <h3>Pocket Notes</h3>
-        <button className='btn'>+</button>
+        {groups.map((group, index) => (
+          <div key={index} className="group-icon" style={{ backgroundColor: group.color }}>
+            {group.initials}
+          </div>
+        ))}
+        <button className="btn" onClick={openPopup}>+</button>
+        {isPopupVisible && (
+        <PopupForm onClose={closePopup} onAddGroup={addGroup}/>
+      )}
       </div>
       <div className="container">
         <div className="content">
