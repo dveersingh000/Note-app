@@ -31,10 +31,7 @@ const Pocket = (props) => {
           ""
         ) : (
           <div className="empty-group-message">
-            <img
-              src="https://i.pinimg.com/originals/8a/dd/cd/8addcd0dad97ceac659e066944a771fa.gif"
-              alt="error"
-            />
+            
             <h2 className="empty-group-heading">Add new note group</h2>
             <p className="empty-group-subtext">
               No groups available. Click on the create <br />
