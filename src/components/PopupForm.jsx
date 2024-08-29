@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './PopupForm.css';
 
 const PopupForm = ({ onClose, onAddGroup }) => {
-  const [groupName, setGroupName] = useState('');
+  const [groupName, setGroupName] = useState(false);
   const [selectedColor, setSelectedColor] = useState('#AA7FFD'); // Default color
 
   const handleGroupNameChange = (e) => setGroupName(e.target.value);

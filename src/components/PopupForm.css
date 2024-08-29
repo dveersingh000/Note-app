@@ -51,7 +51,7 @@ input[type="text"] {
 }
 
 .color-circle.selected {
-  border: 2px solid #000; /* Highlight selected color */
+  border: 2px solid #000; 
 }
 
 .create-btn {
