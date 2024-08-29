@@ -1,0 +1,131 @@
+/* Container styles for the header */
+.note-section-header {
+  height: 12vh;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  background-color: #E8E8E8;
+}
+
+.note-section-header-lg {
+  padding-left: 20px;
+  height: 8vh;
+}
+
+.note-icon {
+  display: none;
+}
+
+.note-icon-lg {
+  display: block;
+}
+
+.note-icon-circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  color: white;
+  font-weight: medium;
+  margin: 0 30px;
+}
+
+.note-title {
+  font-size: 25px;
+  font-weight: medium;
+  color: black;
+}
+
+/* Notes list section */
+.note-list-section {
+  width: 100%;
+  height: 60vh;
+  padding-top: 20px;
+  padding: 30px;
+  padding-left: 40px;
+  overflow-y: auto;
+  border-bottom-left-radius: 10px;
+}
+
+.note-list-section-lg {
+  padding: 15px;
+  height: 70vh;
+}
+
+.note-entry {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.note-entry:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.note-time {
+  flex-basis: 20%;
+  font-size: 18.5px;
+  font-weight: medium;
+}
+
+.note-content {
+  flex-basis: 80%;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.35%;
+}
+
+/* Form and textarea styles */
+.note-form {
+  width: 100%;
+  height: 26vh;
+  background-color: #E8E8E8;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+}
+
+.note-form-lg {
+  height: 18vh;
+  margin-top: 5vh;
+}
+
+.note-textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 10px;
+  padding-left: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  resize: none;
+  position: relative;
+}
+
+.note-button {
+  position: absolute;
+  bottom: -18px;
+  right: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.note-button-lg {
+  bottom: -60px;
+}
+
+.footer {
+  background-color: white;
+  height: 3vh;
+}
+
+.footer-lg {
+  display: none;
+}

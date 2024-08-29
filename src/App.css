@@ -1,4 +1,4 @@
-.app {
+/* .app {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -47,7 +47,7 @@
   justify-content: center;
   position: relative;
   background-color: #DAE5F5;
-  /* left: 435px; */
+  
   
 }
 
@@ -112,4 +112,19 @@ img {
   width: 17px;
   height: 21px;
   margin-right: 5px;
+} */
+
+/* Styles for the App container */
+.app-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 1024px) {
+  .app-container {
+      display: block; /* Change to block for lg screen */
+  }
 }
