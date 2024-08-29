@@ -1,8 +1,8 @@
-import { useContext } from "react";
+
 import "./App.css";
 import img1 from "./assets/img1.png";
 import Vector from "./assets/Vector.png";
-import { NoteContext } from "./context/NoteContext";
+
 import PopupForm from './components/PopupForm';
 import React, { useState } from 'react';
 
@@ -17,7 +17,7 @@ function App() {
     closePopup();
   };
   const [count, setCount] = useState(0);
-  const {notes} = useContext(NoteContext);
+
   
   
 
